@@ -3,7 +3,6 @@ package com.stark.service.developerportfolio.config;
 
 import com.stark.service.developerportfolio.util.GoogleTokenAuthenticationUtil;
 import org.springframework.stereotype.Component;
-
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -34,7 +33,7 @@ public class GoogleAuthFilter implements Filter {
             } catch (GeneralSecurityException e) {
                 e.printStackTrace();
             }
-            //TODO: externalize the Allow-Origin
+           
 
             filterChain.doFilter(request, response);
 
